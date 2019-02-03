@@ -80,7 +80,3 @@ for json_file in files:
         output_path = os.path.join(generated_dir_path(), d['slug'] + '.html')
         with open(output_path, 'x') as f:
             f.write(d['source'])
-
-
-
-

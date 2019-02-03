@@ -1,11 +1,14 @@
 {
   "slug": "lib-fileinput",
   "source": "https://docs.python.org/3.6/library/fileinput.html",
-  "notes": [
-    [
-      {"val": "to read every line in all the filenames in sys.argv[1:] you can do:"},
-      {"t": "occlude", "val": "for line in fileinput.input():"},
-      {"val": "(module-level function)"}
-    ]
+  "cards": [
+    {
+      "uuid": "633b0f8f-2085-4727-a754-6d97ba69c9cc",
+      "data": [
+        {"value": "To read every line from all the files in sys.argv[1:] you can do:"},
+        {"type": "cloze_del", "value": "for line in fileinput.input():", "hint": "module-level function"},
+        {"value": "(module-level function)"}
+      ]
+    }
   ]
 }
