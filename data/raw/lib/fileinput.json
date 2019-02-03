@@ -1,0 +1,11 @@
+{
+  "slug": "lib-fileinput",
+  "source": "https://docs.python.org/3.6/library/fileinput.html",
+  "notes": [
+    [
+      {"val": "to read every line in all the filenames in sys.argv[1:] you can do:"},
+      {"t": "occlude", "val": "for line in fileinput.input():"},
+      {"val": "(module-level function)"}
+    ]
+  ]
+}
