@@ -192,15 +192,16 @@
             "fields": [
                 "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}",
                 "",
-                "https://docs.python.org/3/library/functions.html"
+                "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
             "guid": "d82O8xFbbb",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
+                "python-3-7",
                 "level-1",
-                "built-in-functions",
-                "python-3-7"
+                "built-in-funcs",
+                "built-in-func-bin"
             ]
         }
     ]
