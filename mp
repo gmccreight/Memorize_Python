@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# This is the script for working with this project.  It will grow over time.
+
 # Symlink this file into a place in your path for easy commands.
 
 # In your bash aliases, you should consider doing something like this:
@@ -7,6 +9,13 @@
 # function mp {
 #   if [ "$1" = "cd" ]; then
 #     cd ~/Memorize_Python
+#     return
+#   fi
+#
+#   # if you like Vim
+#   if [ "$1" = "e" ]; then
+#     cd ~/Memorize_Python
+#     mvim -c "Mp"
 #     return
 #   fi
 #
