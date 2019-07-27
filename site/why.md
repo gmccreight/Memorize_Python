@@ -4,8 +4,11 @@ In 2018, I decided to really learn Python.  I had moved into a more
 data-centric role, and our team was starting to use more Python.  Additionally, Python 3 switch was [really gaining steam](https://blogs.dropbox.com/tech/2018/09/how-we-rolled-out-one-of-the-largest-python-3-migrations-ever/).
 Basically, it seemed like a no-brainer.
 
-Learning another language... no big deal.  I've been around the block, and have
-programmed in many languages, including Python, in the past.  However, I always
+Learning another language, while not easy, is a well-trod path for me.  I've
+been around the block, and have programmed in many languages, including Python,
+in the past.
+
+However, when I reflected on my skills a bit more, I realized I have always
 muddled through, learning enough to get the job done, but frequently falling
 back to Stack Overflow and other reference materials that were close at hand.
 
@@ -39,10 +42,10 @@ it seemed to be working very well for me.  I was picking up the concepts
 quickly, and more importantly, I was readily retaining them due to the
 repetition.
 
-However, in the early days, it felt like there were a mountain of cards (there
+However, in the early days, it felt like there was a mountain of cards (there
 are 211 in that deck).  Anki's schedule forced me to revisit them relentlessly.
 At times I felt overwhelmed by my queue, and even considered calling it a
-failed experiment a few times.  But then something surprising happened.  The
+failed experiment more than once.  But then something surprising happened.  The
 reviews lessened.  My queue dwindled.  I... somehow... only had a couple cards
 to review per day, and when I reviewed them I knew them *cold*.  What
 happened?!?  My intuition about exponential backoff had completely failed me.
@@ -59,11 +62,11 @@ sums it up his similar findings, and points to a surprising conclusion:
 > Which in turn means that for me, the real marginal cost is in the moment of
 > *writing* a new card.
 
-I found myself facing that same marginal cost.  I had reached a marginal cost
-of zero on reviewing the already-prepared cards, but I wanted more knowledge.
-Much more.  I had been creating new cards while reviewing the Python
-documentation, but unlike reviewing, which can be done casually on your phone,
-creating cards is a challenging and time-consuming process, so I wasn't
+I found myself facing that same high marginal cost.  Yes, reviewing the
+already-prepared cards was now quick and painless, but I wanted more knowledge;
+much more.  To that end, I had been creating new cards while reviewing the
+Python documentation, but unlike reviewing, which can be done casually on your
+phone, creating cards is a challenging and time-consuming process, so I wasn't
 creating nearly as many as I could consume.  Additionally, for the first few
 months I was creating sub-par cards.  I could tell because one of them would
 come up for review and the question would be slightly ambigous, robbing me of
@@ -79,6 +82,14 @@ project.  I'm looking for like-minded people (there is at least [one other one
 out there](https://sivers.org/srs)) who want to collaborate on creating a
 resource we can all benefit from.
 
-The collaboration groundwork has been laid by Anki, and its plugin system that
+The groundwork has been laid by Anki, and its plugin system that
 allowed for fantastic plugin geared specifically towards authoring decks collaboratively:
 [CrowdAnki](https://ankiweb.net/shared/info/1788670778).
+
+Additionally, I think we can arrive at a simple note taking scheme that
+maintains the lineage of the information, and makes collaboration
+straightforward.  The [Memorize Python](https://github.com/gmccreight/Memorize_Python)
+project aims to make collaborating on a shared deck as pain-free as possible.
+
+I believe we can collectively build a very powerful artifact that will help us
+gain a deep and lasting understanding of Python.
