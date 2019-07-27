@@ -1,0 +1,16 @@
+{
+  "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+  "field_Source": "https://docs.python.org/3/library/dataclasses.html",
+  "field_Extra": "",
+  "tags": ["python-3-7", "python-lib", "python-lib-dataclasses"],
+  "__sections": [
+    {
+      "__notes": [
+        {
+          "guid": "dc38f9Fxdd",
+          "field_Front": "the dataclasses module was introduced in Python version {{c1::3.7}}"
+        }
+      ]
+    }
+  ]
+}

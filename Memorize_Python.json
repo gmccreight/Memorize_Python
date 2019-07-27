@@ -175,6 +175,23 @@
             "__type__": "Note",
             "data": "",
             "fields": [
+                "the dataclasses module was introduced in Python version {{c1::3.7}}",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "dc38f9Fxdd",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
                 "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}",
                 "",
                 "https://docs.python.org/3/library/functions.html#bin"

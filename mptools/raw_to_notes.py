@@ -9,8 +9,7 @@ def file_to_notes(pathstring):
     with open(pathstring, 'r') as f:
         d = json.load(f)
     notes = annotated_notes_from_data(d)
-    final_json = annotated_notes_to_final_json(notes)
-    return final_json
+    return annotated_notes_to_final_notes(notes)
 
 
 def val_or_action_data(d):
@@ -60,12 +59,11 @@ def annotated_notes_from_data(d):
     return result
 
 
-def annotated_notes_to_final_json(notes):
+def annotated_notes_to_final_notes(notes):
     result = []
     template_text = (Path(__file__).parent.parent / 'templates/single_note.json').read_text()
     template = Template(template_text)
     for note in notes:
         note["rollup"]["tags"] = json.dumps(note["rollup"]["tags"])
         result.append(template.substitute(note["rollup"]))
-    all_json = "[" + ",".join(result) + "]"
-    return json.dumps(json.loads(all_json), indent=4, sort_keys=True)
+    return result
