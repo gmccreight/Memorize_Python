@@ -6,25 +6,24 @@
 
 # function mp {
 #   if [ "$1" = "cd" ]; then
-#     cd ~/memorize_python
+#     cd ~/Memorize_Python
 #     return
 #   fi
 #
 #   (
-#     cd ~/memorize_python
+#     cd ~/Memorize_Python
 #     /usr/local/bin/mp $@
 #   )
 # }
 
 import argparse
 import inspect
-import json
 import logging
-import os
-import shutil
+from mptools.compile import compile_to_final_crowdanki_json_in_project_root
 
-parser = argparse.ArgumentParser(description='tool for working with mp')
-parser.add_argument('-v', action="count", default=0)
+parser = argparse.ArgumentParser(description='tool for working with Memorize Python')
+parser.add_argument('compile', nargs="?")
+parser.add_argument('-v', action="count", default=0, help="additive verbosity")
 args = parser.parse_args()
 
 if args.v >= 2:
@@ -38,45 +37,11 @@ def debug(message):
     logging.debug(caller_info + str(message))
 
 
-def raw_data_files():
-    raw_data_path = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)),
-        "data/raw"
-    )
-    debug(raw_data_path)
-    results = []
-    for i in os.walk(raw_data_path):
-        files = i[2]
-        for f in files:
-            if f.endswith('.json'):
-                results.append(os.path.join(i[0], f))
-    return results
+def do_compile():
+    compile_to_final_crowdanki_json_in_project_root()
 
 
-def generated_dir_path():
-    return os.path.join(
-        os.path.dirname(os.path.realpath(__file__)),
-        "generated"
-    )
-
-
-def ensure_generated_dir_and_clean():
-    try:
-        os.mkdir(generated_dir_path())
-    except FileExistsError:
-        pass
-
-    shutil.rmtree(generated_dir_path())
-    os.mkdir(generated_dir_path())
-
-
-ensure_generated_dir_and_clean()
-files = raw_data_files()
-
-for json_file in files:
-    debug(json_file)
-    with open(json_file) as json_source:
-        d = json.load(json_source)
-        output_path = os.path.join(generated_dir_path(), d['slug'] + '.html')
-        with open(output_path, 'x') as f:
-            f.write(d['source'])
+if args.compile:
+    do_compile()
+else:
+    parser.print_help()
