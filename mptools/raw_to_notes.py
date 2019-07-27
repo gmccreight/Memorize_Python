@@ -69,4 +69,4 @@ def annotated_notes_to_final_json(notes):
         note["rollup"]["tags"] = json.dumps(note["rollup"]["tags"])
         result.append(template.substitute(note["rollup"]))
     all_json = "[" + ",".join(result) + "]"
-    return json.loads(all_json)
+    return json.dumps(json.loads(all_json), indent=4, sort_keys=True)
