@@ -15,10 +15,6 @@
         {
           "guid": "ee2O4xcab9",
           "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
-        },
-        {
-          "guid": "119dffabba",
-          "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
         }
       ]
     }
