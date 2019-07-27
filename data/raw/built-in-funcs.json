@@ -1,6 +1,6 @@
 {
   "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
-  "field_Source": "https://hello.python.org/3/library/functions.html",
+  "field_Source": "https://docs.python.org/3/library/functions.html",
   "field_Extra": "",
   "tags": ["python-3-7", "built-in-funcs"],
   "__sections": [

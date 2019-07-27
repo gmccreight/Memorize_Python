@@ -177,7 +177,7 @@
             "fields": [
                 "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}",
                 "",
-                "https://hello.python.org/3/library/functions.html#bin"
+                "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
             "guid": "d82O8xFbbb",
@@ -194,7 +194,7 @@
             "fields": [
                 "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}",
                 "",
-                "https://hello.python.org/3/library/functions.html#bin"
+                "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
             "guid": "ee2O4xcab9",
@@ -211,7 +211,7 @@
             "fields": [
                 "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}",
                 "",
-                "https://hello.python.org/3/library/functions.html#bin"
+                "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
             "guid": "119dffabba",
