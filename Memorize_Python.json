@@ -204,6 +204,23 @@
                 "built-in-funcs",
                 "built-in-func-bin"
             ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}",
+                "",
+                "https://hello.python.org/3/library/functions.html#bin"
+            ],
+            "flags": 0,
+            "guid": "119dffabba",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bin"
+            ]
         }
 
     ]

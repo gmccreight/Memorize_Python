@@ -64,7 +64,6 @@ def annotated_notes_to_final_json(notes):
     result = []
     template_text = (Path(__file__).parent.parent / 'templates/single_note.json').read_text()
     template = Template(template_text)
-    notes = notes[0:2]
     for note in notes:
         note["rollup"]["tags"] = json.dumps(note["rollup"]["tags"])
         result.append(template.substitute(note["rollup"]))
