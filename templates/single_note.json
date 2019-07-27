@@ -1,0 +1,13 @@
+{
+    "__type__": "Note",
+    "data": "",
+    "fields": [
+        "$field_Front",
+        "$field_Extra",
+        "$field_Source"
+    ],
+    "flags": 0,
+    "guid": "$guid",
+    "note_model_uuid": "$note_model_uuid",
+    "tags": $tags 
+}

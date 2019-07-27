@@ -1,0 +1,26 @@
+{
+  "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+  "field_Source": "https://docs.python.org/3/library/functions.html",
+  "field_Extra": "",
+  "tags": ["python-3-7", "built-in-funcs"],
+  "__sections": [
+    {
+      "field_Source__plusequal": "#bin",
+      "tags__extend": ["built-in-func-bin"],
+      "__notes": [
+        {
+          "guid": "d82O8xFbbb",
+          "field_Front": "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}"
+        },
+        {
+          "guid": "ee2O4xcab9",
+          "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
+        },
+        {
+          "guid": "119dffabba",
+          "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
+        }
+      ]
+    }
+  ]
+}
