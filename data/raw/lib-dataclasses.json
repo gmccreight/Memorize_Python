@@ -9,6 +9,38 @@
         {
           "guid": "dc38f9Fxdd",
           "field_Front": "the dataclasses module was introduced in Python version {{c1::3.7}}"
+        },
+        {
+          "guid": "xLJZ79zkYc",
+          "field_Front": "The {{c1::dataclasses}} module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes."
+        },
+        {
+          "guid": "fm8nGQJI8X",
+          "field_Front": "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclasses}}"
+        },
+        {
+          "guid": "03Th1VcNej",
+          "field_Front": "dataclasses: The {{c1::member variables}} to use in these generated methods are defined using PEP 526 type annotations."
+        },
+        {
+          "guid": "LnMquMRMJR",
+          "field_Front": "The dataclass() decorator examines the class to find {{c1::fields}}."
+        },
+        {
+          "guid": "XVqz1RuMYq",
+          "field_Front": "dataclasses: A {{c1::field}} is defined as class variable that has a type annotation."
+        },
+        {
+          "guid": "wS8yVJXIAv",
+          "field_Front": "dataclasses: in the __eq__() method that is generated it compares the class as if it were a {{c1::tuple of its fields}}, in order."
+        },
+        {
+          "guid": "JqRvxCh1lN",
+          "field_Front": "dataclasses: @dataclass will generate a __hash__() for you by default if the decorator arguments {{c1::eq}} and {{c1::frozen}} are both true"
+        },
+        {
+          "guid": "3a2BvEcZW6",
+          "field_Front": "Returns a tuple of Field objects that define the fields for this dataclass: {{c1::dataclasses.fields(class_or_instance}})"
         }
       ]
     }

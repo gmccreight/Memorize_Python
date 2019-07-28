@@ -13,12 +13,16 @@ import logging
 # the Anki code is pretty good!
 
 
+def empty_guid_replace(match):
+    return '"guid": "{}",'.format(guid())
+
+
 def fill_empty_guids():
     for f in json_files():
         logging.debug(f"checking the guids in {f}")
         d = f.read_text()
         before = d
-        d = re.sub(r'"guid": "",', '"guid": "{}",'.format(guid()), d)
+        d = re.sub(r'"guid": "",', empty_guid_replace, d)
         after = d
         f.write_text(d)
         if after != before:

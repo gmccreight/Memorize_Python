@@ -192,6 +192,142 @@
             "__type__": "Note",
             "data": "",
             "fields": [
+                "The {{c1::dataclasses}} module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes.",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "xLJZ79zkYc",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclasses}}",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "fm8nGQJI8X",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: The {{c1::member variables}} to use in these generated methods are defined using PEP 526 type annotations.",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "03Th1VcNej",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The dataclass() decorator examines the class to find {{c1::fields}}.",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "LnMquMRMJR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: A {{c1::field}} is defined as class variable that has a type annotation.",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "XVqz1RuMYq",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: in the __eq__() method that is generated it compares the class as if it were a {{c1::tuple of its fields}}, in order.",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "wS8yVJXIAv",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: @dataclass will generate a __hash__() for you by default if the decorator arguments {{c1::eq}} and {{c1::frozen}} are both true",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "JqRvxCh1lN",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Returns a tuple of Field objects that define the fields for this dataclass: {{c1::dataclasses.fields(class_or_instance}})",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "3a2BvEcZW6",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
                 "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}",
                 "",
                 "https://docs.python.org/3/library/functions.html#bin"
