@@ -9,11 +9,11 @@
       "tags__extend": ["built-in-func-bin"],
       "__notes": [
         {
-          "guid": "d82O8xFbbb",
+          "guid": "f82O8xFbbb",
           "field_Front": "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}"
         },
         {
-          "guid": "ee2O4xcab9",
+          "guid": "ae2O4xcab9",
           "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
         }
       ]

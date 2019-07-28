@@ -180,7 +180,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "dc38f9Fxdd",
+            "guid": "dc37f9Fxdd",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -198,7 +198,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "xLJZ79zkYc",
+            "guid": "xLJZ78zkYc",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -216,7 +216,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "fm8nGQJI8X",
+            "guid": "fm7nGQJI8X",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -234,7 +234,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "03Th1VcNej",
+            "guid": "02Th1VcNej",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -252,7 +252,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "LnMquMRMJR",
+            "guid": "L1MquMRMJR",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -270,7 +270,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "XVqz1RuMYq",
+            "guid": "XVqz0RuMYq",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -288,7 +288,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "wS8yVJXIAv",
+            "guid": "wS7yVJXIAv",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -306,7 +306,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "JqRvxCh1lN",
+            "guid": "JqRvxCh0lN",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -324,7 +324,7 @@
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
             "flags": 0,
-            "guid": "3a2BvEcZW6",
+            "guid": "2a2BvEcZW6",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "new-in-python-3-7",
@@ -342,7 +342,7 @@
                 "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
-            "guid": "d82O8xFbbb",
+            "guid": "f82O8xFbbb",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "python-3-7",
@@ -359,7 +359,7 @@
                 "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
-            "guid": "ee2O4xcab9",
+            "guid": "ae2O4xcab9",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "python-3-7",
