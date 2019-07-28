@@ -29,9 +29,10 @@ import argparse
 import inspect
 import logging
 from mptools.compile import compile_to_final_crowdanki_json_in_project_root
+from mptools.raw_tools import fill_empty_guids
 
 parser = argparse.ArgumentParser(description='tool for working with Memorize Python')
-parser.add_argument('compile', nargs="?")
+parser.add_argument('mode', nargs="?", choices=['compile', 'guid'])
 parser.add_argument('-v', action="count", default=0, help="additive verbosity")
 args = parser.parse_args()
 
@@ -50,7 +51,9 @@ def do_compile():
     compile_to_final_crowdanki_json_in_project_root()
 
 
-if args.compile:
+if args.mode == 'compile':
     do_compile()
+elif args.mode == 'guid':
+    fill_empty_guids()
 else:
     parser.print_help()
