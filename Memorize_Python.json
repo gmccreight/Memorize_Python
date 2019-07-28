@@ -211,7 +211,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclasses}}",
+                "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclass}}",
                 "",
                 "https://docs.python.org/3/library/dataclasses.html"
             ],
@@ -265,7 +265,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "dataclasses: A {{c1::field}} is defined as class variable that has a type annotation.",
+                "dataclasses: A {{c1::field}} is defined as class variable that has a {{c2::type annotation}}.",
                 "",
                 "https://docs.python.org/3/library/dataclasses.html"
             ],

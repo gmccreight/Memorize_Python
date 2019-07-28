@@ -16,7 +16,7 @@
         },
         {
           "guid": "fm8nGQJI8X",
-          "field_Front": "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclasses}}"
+          "field_Front": "The name of the decorator that takes a class with fields and automatically generates special methods like __init__() and __repr__() on that class: {{c1::@dataclass}}"
         },
         {
           "guid": "03Th1VcNej",
@@ -28,7 +28,7 @@
         },
         {
           "guid": "XVqz1RuMYq",
-          "field_Front": "dataclasses: A {{c1::field}} is defined as class variable that has a type annotation."
+          "field_Front": "dataclasses: A {{c1::field}} is defined as class variable that has a {{c2::type annotation}}."
         },
         {
           "guid": "wS8yVJXIAv",

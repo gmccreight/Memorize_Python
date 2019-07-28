@@ -13,7 +13,7 @@ def file_to_notes(pathstring):
 
 
 def val_or_action_data(d):
-    """Return everything in the root, except keys containing __"""
+    """Return everything in the root, except keys starting __"""
     return dict([(x, d[x]) for x in d if x.find('__') != 0])
 
 
