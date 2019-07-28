@@ -125,8 +125,8 @@ do casually on my phone and became exponentially easier, creating cards was
 challenging, time-consuming, and remained equally so over time.  For that
 reason, I wasn't creating nearly as many cards as I could consume.
 
-My inability to create enough cards to keep my busy led to look for a scalable
-solution.  That solution is the [Memorize
+My inability to create enough cards to keep me busy reviewing led to look for a
+scalable solution.  That solution is the [Memorize
 Python](https://github.com/gmccreight/Memorize_Python) project.
 
 ### The Memorize Python Project
