@@ -27,7 +27,7 @@ understand that Python, despite being so similar, would actually be a
 preferable daily driver language to the one I was already using, Ruby, in part
 because I was doing more data work, and in part due to its tragectory.
 
-In the past I had shied away from Python because I felt its tragectory felt
+In the past I had shied away from Python because its tragectory felt
 unclear to me.  I didn't like the complexities of the 2/3 split.  I worked on
 some of our infrastructural tooling at work, but it was written in Python 2,
 and I wasn't particularly interested in learning older technology.  If I was
