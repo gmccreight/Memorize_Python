@@ -1,4 +1,4 @@
-# Memorizing a Programming Language.  Why?  How?
+# Memorizing Python.  Why?  How?
 
 ### Deciding to learn Python
 
@@ -131,8 +131,8 @@ Python](https://github.com/gmccreight/Memorize_Python) project.
 
 So here's the call to action: I'm looking for like-minded people (there is at
 least [one other one out there](https://sivers.org/srs)) who want to
-collaborate on creating a powerful resource that everyone who wants to learn
-Python at a deep level can benefit from.
+collaborate on creating a powerful spaced repetition resource that will help
+anyone who wants to learn Python at a deep level.
 
 The groundwork has been laid by Anki, and its plugin system that allowed for
 fantastic plugin for collaborative deck authoring:
