@@ -147,5 +147,5 @@ supply.  In short, the project aims to make collaborating on a shared deck of
 Python cards as straightforward and pain-free as possible.
 
 I believe we can collectively build a very powerful artifact that will help us
-gain a deep and lasting understanding of Python, a language that I have
-determined is worthy of such effort.
+gain a deep and lasting understanding of Python, a language that is worthy of
+careful study.
