@@ -53,7 +53,7 @@ language for most of my programming tasks going forward.
 ### Actually Learning Python
 
 Learning a new language, while not easy, is a process I'm familiar with.
-I've have programmed in many languages, including a small amount of Python, in
+I have programmed in many languages, including a small amount of Python, in
 the past.
 
 However, when I reflected on my skills a bit more, even for languages that I'm
