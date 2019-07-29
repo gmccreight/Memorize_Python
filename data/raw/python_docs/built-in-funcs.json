@@ -5,16 +5,1114 @@
   "tags": ["python-3-7", "built-in-funcs"],
   "__sections": [
     {
+      "field_Source__plusequal": "#__import__",
+      "tags__extend": ["built-in-func-__import__"],
+      "__notes": [
+        {
+          "guid": "x3v35qs2Hx",
+          "field_Front": "Direct use of __import__() is discouraged in favor of {{c1::importlib.import_module()}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#abs",
+      "tags__extend": ["built-in-func-abs"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#all",
+      "tags__extend": ["built-in-func-all"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#any",
+      "tags__extend": ["built-in-func-any"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#ascii",
+      "tags__extend": ["built-in-func-ascii"],
+      "__notes": [
+        {
+          "guid": "F0VlyZCPpx",
+          "field_Front": "{{c1::ascii()}} generates a string similar to that returned by repr() in Python 2"
+        },
+        {
+          "guid": "3NeTFNXdvB",
+          "field_Front": "the {{c1::ascii()}} built-in function escapes non-ASCII characters using the backslash x, u, and U escapes"
+        },
+        {
+          "guid": "40yqa7vqm1",
+          "field_Front": "when you replace non-ASCII chars with backslash x, y and U, these are called {{c1::escapes}}"
+        }
+      ]
+    },
+    {
       "field_Source__plusequal": "#bin",
       "tags__extend": ["built-in-func-bin"],
       "__notes": [
         {
-          "guid": "f82O8xFbbb",
-          "field_Front": "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}"
+          "guid": "Ypn1vaB1ql",
+          "field_Front": "the bin() built-in function converts an integer number to a {{c1::binary string}} prefixed with {{c1::'0b'}}"
         },
         {
-          "guid": "ae2O4xcab9",
-          "field_Front": "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}"
+          "guid": "7F8vHATjIE",
+          "field_Front": "bin(3) outputs {{c1::'0b11'}}"
+        },
+        {
+          "guid": "zPJRdzkGdD",
+          "field_Front": "in bin(x) if x is not an int object, it must {{c1::define an __index__() method}} that {{c1::results in an integer}}"
+        },
+        {
+          "guid": "BYAPu8MPbw",
+          "field_Front": "in format(14, x) what does x have to be for the result to be '0b1110'? {{c1::'#b'}}"
+        },
+        {
+          "guid": "dUn8uIvzGb",
+          "field_Front": "in format(14, x) what does x have to be for the result to be '1110'? {{c1::'b'}}"
+        },
+        {
+          "guid": "TxEfy4A6Gt",
+          "field_Front": "within a formatted string, what does the formatted field look like to turn 13 into binary with no binary prefix {{c1:: {13:b} }}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#bool",
+      "tags__extend": ["built-in-func-bool"],
+      "__notes": [
+        {
+          "guid": "tckGESWXwb",
+          "field_Front": "the bool class is a subclass of {{c1::int}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#breakpoint",
+      "tags__extend": ["built-in-func-breakpoint"],
+      "__notes": [
+        {
+          "guid": "2ESeIDrVc6",
+          "field_Front": "breakpoint() was introduced in {{c1::3.7}}"
+        },
+        {
+          "guid": "QsyP9WdJUE",
+          "field_Front": "breakpoint() drops you in the debugger at the {{c1::call site}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#bytearray",
+      "tags__extend": ["built-in-func-bytearray"],
+      "__notes": [
+        {
+          "guid": "LpafLvO2Q4",
+          "field_Front": "The {{c1::bytearray}} class is a mutable sequence of integers in the range 0 <= x < 256"
+        },
+        {
+          "guid": "QJXGBcGT2G",
+          "field_Front": "The bytearray class is a mutable sequence of integers in the range  {{c1::0 <= x < 256}}"
+        },
+        {
+          "guid": "2qNTue1syf",
+          "field_Front": "bytearray built-in: if 'source' in function call is an object conforming to the buffer interface, a {{c1::read-only buffer of the object}} will be used to initialize the bytes array."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#bytes",
+      "tags__extend": ["built-in-func-bytes"],
+      "__notes": [
+        {
+          "guid": "5XwfPpIlb2",
+          "field_Front": "{{c1::bytes}} is an immutable version of bytearray"
+        },
+        {
+          "guid": "Gz7dpwbBX2",
+          "field_Front": "bytes is an immutable version of {{c1::bytearray}}"
+        },
+        {
+          "guid": "4Igc32rLFb",
+          "field_Front": "bytearray vs. bytes: which one can also be created with literals? {{c1::bytes}}"
+        },
+        {
+          "guid": "EUPbJr4J80",
+          "field_Front": "what this outputs and why: list(b'A') {{c1::[65] because b'A' is byte literal syntax, and list() translates bytes arrays into integers}}"
+        },
+        {
+          "guid": "XACUZbb0Wh",
+          "field_Front": "b'A' is {{c1::byte literal}} syntax"
+        },
+        {
+          "guid": "KvpVO17mvK",
+          "field_Front": "bytes and bytearray are binary {{c1::sequence}} types"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#callable",
+      "tags__extend": ["built-in-func-callable"],
+      "__notes": [
+        {
+          "guid": "R0VHFsBL9a",
+          "field_Front": "classes are callable.  doing so {{c1::returns a new instance}}"
+        },
+        {
+          "guid": "Nl2IP0a6RA",
+          "field_Front": "instances are callable if {{c1::their class has a __call__() method}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#chr",
+      "tags__extend": ["built-in-func-chr"],
+      "__notes": [
+        {
+          "guid": "bJKTXY4I5S",
+          "field_Front": "built-in function that returns the string representing a character whose Unicode code point is the integer i: {{c1::chr(i)}}"
+        },
+        {
+          "guid": "H5occrWv8e",
+          "field_Front": "chr() is the inverse of {{c1::ord()}}"
+        },
+        {
+          "guid": "r09udXDuVJ",
+          "field_Front": "chr(): {{c1::ValueError}} will be raised if i is outside the range of 0 through 1,114,111"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#classmethod",
+      "tags__extend": ["built-in-func-classmethod"],
+      "__notes": [
+        {
+          "guid": "zuBibEvile",
+          "field_Front": "A class method receives the {{c1::class}} as {{c1::implicit}} first argument"
+        },
+        {
+          "guid": "Y9P99XSI88",
+          "field_Front": "transform a method into a class method with the built-in {{c1::classmethod}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#compile",
+      "tags__extend": ["built-in-func-compile"],
+      "__notes": [
+        {
+          "guid": "OxbI8iDI6Y",
+          "field_Front": "compile: Compile the source into a {{c1::code}} or {{c1::AST}} object"
+        },
+        {
+          "guid": "WE02ptb6iR",
+          "field_Front": "compile: Code objects can be executed by {{c1::exec()}} or {{c1::eval()}}"
+        },
+        {
+          "guid": "clo4MkcJi2",
+          "field_Front": "compile: The {{c1::filename}} argument should give the file from which the code was read"
+        },
+        {
+          "guid": "Kib2PMknmb",
+          "field_Front": "compile: The {{c1::filename}} argument should give the file from which the code was read"
+        },
+        {
+          "guid": "Ni9qgjFVeA",
+          "field_Front": "compile built-in: if the source wasn’t read from a file {{c1::'<string>'}} is commonly used for the filename argument"
+        },
+        {
+          "guid": "RGlqkF8lwr",
+          "field_Front": "compile built-in: {{c1::mode}} argument specifies what kind of code must be compiled"
+        },
+        {
+          "guid": "1QgtlDY1K7",
+          "field_Front": "compile built-in, 'mode': {{c1::'exec'}} if source consists of a sequence of statements"
+        },
+        {
+          "guid": "sgt1IV6dmN",
+          "field_Front": "compile built-in, 'mode': {{c1::'eval'}} if it consists of a single expression"
+        },
+        {
+          "guid": "gJiohkZvMV",
+          "field_Front": "compile built-in, 'mode': {{c1::'single'}} if it consists of a single interactive statement"
+        },
+        {
+          "guid": "BAe6E4nCpt",
+          "field_Front": "compile built-in: when mode argument is 'single' {{c1::expression statements}} that evaluate to something other than None will be printed"
+        },
+        {
+          "guid": "PxnfllNJIR",
+          "field_Front": "compile built-in: The optional arguments 'flags' and 'dont_inherit' control which {{c1::future statements}} affect the compilation of source"
+        },
+        {
+          "guid": "kU3pKXjhSh",
+          "field_Front": "compile built-in: The argument {{c1::optimize}} specifies the optimization level of the compiler"
+        },
+        {
+          "guid": "aLruonioD2",
+          "field_Front": "compile built-in: The argument 'optimize' defaults to -1, which selects the optimization level of the interpreter as given by {{c1::-O}} options"
+        },
+        {
+          "guid": "5PgB0ueALZ",
+          "field_Front": "If you want to parse Python code into its AST representation, see {{c1::ast.parse()}}"
+        },
+        {
+          "guid": "udUNQQ8Cyk",
+          "field_Front": "In your documentation you can skip running doctest on prompt commands with {{c1::# doctest: +SKIP}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#complex",
+      "tags__extend": ["built-in-func-complex"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#delattr",
+      "tags__extend": ["built-in-func-delattr"],
+      "__notes": [
+        {
+          "guid": "8gz9O7mTmq",
+          "field_Front": "The built-in function {{c1::delattr(x, 'foobar')}} is equivalent to del x.foobar"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#dict",
+      "tags__extend": ["built-in-func-dict"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#dir",
+      "tags__extend": ["built-in-func-dir"],
+      "__notes": [
+        {
+          "guid": "jBsKsdmPDA",
+          "field_Front": "dir(object): the object has a method named {{c1::__dir__()}}, this method will be called and must return the list of attributes."
+        },
+        {
+          "guid": "KiYu6wMktj",
+          "field_Front": "dir(object): If the object does not provide {{c1::__dir__()}}, the function tries its best to gather information from the object's __dict__ attribute, if defined, and from its type object."
+        },
+        {
+          "guid": "kj7UqSHiOe",
+          "field_Front": "dir(object): If the object does not provide __dir__(), the function tries its best to gather information from the object's {{c1::__dict__}} attribute, if defined, and from its type object."
+        },
+        {
+          "guid": "XhNLyVGUOW",
+          "field_Front": "dir(object): The resulting list is not necessarily complete, and may be inaccurate when the object has a custom {{c1::__getattr__()}}"
+        },
+        {
+          "guid": "Ohe13NyfqF",
+          "field_Front": "dir() built-in function: {{c1::metaclass attributes}} are not in the result list when the argument is a class."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#divmod",
+      "tags__extend": ["built-in-func-divmod"],
+      "__notes": [
+        {
+          "guid": "1u9hC5a8yM",
+          "field_Front": "The built-in function {{c1::divmod}} takes two (non complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#enumerate",
+      "tags__extend": ["built-in-func-enumerate"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#eval",
+      "tags__extend": ["built-in-func-eval"],
+      "__notes": [
+        {
+          "guid": "AbrHXp9N4U",
+          "field_Front": "The eval optional keyword parameters are {{c1::globals}} and {{c1::locals}}"
+        },
+        {
+          "guid": "11P0GBinwr",
+          "field_Front": "See {{c1::ast.literal_eval()}} for a function that can safely evaluate strings with expressions containing only literals."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#exec",
+      "tags__extend": ["built-in-func-exec"],
+      "__notes": [
+        {
+          "guid": "AnUABxn8mx",
+          "field_Front": "the module that provides direct access to all ‘built-in’ identifiers of Python is {{c1::builtins}}"
+        },
+        {
+          "guid": "HxfF5xfZDR",
+          "field_Front": "exec(): you can control what builtins are available to the executed code by inserting your own {{c1::__builtins__}} dictionary into globals before passing it to exec()"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#filter",
+      "tags__extend": ["built-in-func-filter"],
+      "__notes": [
+        {
+          "guid": "myPv7XGlR9",
+          "field_Front": "filter(): See {{c1::itertools.filterfalse()}} for the complementary function that returns elements of iterable for which function returns false."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#float",
+      "tags__extend": ["built-in-func-float"],
+      "__notes": [
+        {
+          "guid": "AAAY4nuR7B",
+          "field_Front": "float(): you can make infinity by doing: {{c1::float('Infinity')}} (long style) or {{c1::float('inf')}} (short style)"
+        },
+        {
+          "guid": "avfrrYmpuM",
+          "field_Front": "int, float, complex are {{c1::numeric types}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#format",
+      "tags__extend": ["built-in-func-format"],
+      "__notes": [
+        {
+          "guid": "hkp04etNqk",
+          "field_Front": "the name of the second parameter: format(value[, {{c1::format_spec}} ])"
+        },
+        {
+          "guid": "q0yYKGLLCX",
+          "field_Front": "format(): The default format_spec is an empty string which usually gives the same effect as calling {{c1::str(value)}}"
+        },
+        {
+          "guid": "DHRhominTJ",
+          "field_Front": "A call to format(value, format_spec) is translated to type(value).__format__(value, format_spec) which bypasses the {{c1::instance dictionary}} when searching for the value’s __format__() method"
+        },
+        {
+          "guid": "DHOrPi5kSR",
+          "field_Front": "A call to format(value, format_spec) is translated to {{c1::type(value).__format__(value, format_spec)}} which bypasses the instance dictionary when searching for the value’s __format__() method"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#frozenset",
+      "tags__extend": ["built-in-func-frozenset"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#getattr",
+      "tags__extend": ["built-in-func-getattr"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#globals",
+      "tags__extend": ["built-in-func-globals"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#hasattr",
+      "tags__extend": ["built-in-func-hasattr"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#hash",
+      "tags__extend": ["built-in-func-hash"],
+      "__notes": [
+        {
+          "guid": "NwjVrty4I5",
+          "field_Front": "Hash values are {{c1::integers}}"
+        },
+        {
+          "guid": "Okd4aXHO7M",
+          "field_Front": "hash() values are used to quickly compare {{c1::dictionary keys}} during a dictionary lookup"
+        },
+        {
+          "guid": "YZwHBuFoga",
+          "field_Front": "For objects with custom __hash__() methods, note that hash() {{c1::truncates}} the return value based on the {{c1::bit width}} of the host machine"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#help",
+      "tags__extend": ["built-in-func-help"],
+      "__notes": [
+        {
+          "guid": "9WevuFNqSz",
+          "field_Front": "The help function is added to the built-in namespace by the {{c1::site}} module"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#hex",
+      "tags__extend": ["built-in-func-hex"],
+      "__notes": [
+        {
+          "guid": "zBT1ExIa1P",
+          "field_Front": "hex(): the hexadecimal string returned is prefixed with {{c1::'0x'}}"
+        },
+        {
+          "guid": "UVPr952Iky",
+          "field_Front": "the shorthand formatted string literal syntax for showing the hex representation of 255 (with the '0x' prefix) is {{c1::'%#x' % 255}}"
+        },
+        {
+          "guid": "TYRCcnAbhY",
+          "field_Front": "hex: formatted string literal that returns '0xff' {{c1::f'{255:#x}'}}"
+        },
+        {
+          "guid": "q9ND65N6Pa",
+          "field_Front": "hex: formatted string literal that returns 'ff' {{c1::f'{255:x}'}}"
+        },
+        {
+          "guid": "8yPXLHlbG6",
+          "field_Front": "hex: formatted string literal that returns 'FF' (uppercase) {{c1::f'{255:X}'}}"
+        },
+        {
+          "guid": "pCu0PtV0jU",
+          "field_Front": "To obtain a hexadecimal string representation for a float, use the {{c1::float.hex()}} method"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#id",
+      "tags__extend": ["built-in-func-id"],
+      "__notes": [
+        {
+          "guid": "kd9UFbbBhQ",
+          "field_Front": "In CPython the id of an object is {{c1::the address of the object in memory}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#input",
+      "tags__extend": ["built-in-func-input"],
+      "__notes": [
+        {
+          "guid": "QO232PO5Vd",
+          "field_Front": "If the {{c1::readline}} module was loaded, then input() will use it to provide elaborate line editing and history features"
+        },
+        {
+          "guid": "qaeb4x3WcY",
+          "field_Front": "input() built-in: When EOF is read, {{c1::EOFError}} is raised"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#int",
+      "tags__extend": ["built-in-func-int"],
+      "__notes": [
+        {
+          "guid": "zD6zn0N69M",
+          "field_Front": "int builtin: For floating point numbers, the {{c1::__trunc__}} method on the object is used"
+        },
+        {
+          "guid": "Qk9NOP04am",
+          "field_Front": "int builtin: For floating point numbers, int {{c1::truncates towards zero}}"
+        },
+        {
+          "guid": "k7bTebNMrp",
+          "field_Front": "int builtin: another way of saying base 10 is {{c1::radix 10}}"
+        },
+        {
+          "guid": "LhHXDlczYx",
+          "field_Front": "int builtin: if the x in int(x) is not a number, then it must be one of these three types: {{c1::string, bytes, bytearray}}"
+        },
+        {
+          "guid": "t8FNUviCZQ",
+          "field_Front": "int builtin: the value for 'a' in a string in x in int(x) is {{c1::10}}"
+        },
+        {
+          "guid": "k1RSOgj9bY",
+          "field_Front": "int builtin: the value for 'z' in a string in x in int(x) is {{c1::35}}"
+        },
+        {
+          "guid": "MPrCIVyONU",
+          "field_Front": "int builtin: A base-n literal consists of the digits 0 to {{c1::n-1}}"
+        },
+        {
+          "guid": "dvQOsurM9E",
+          "field_Front": "int builtin: if you do int('z', WHAT_BASE), (where 'z' is equal to 35) then what base must you use and why? {{c1::36 because allowed digits are 0 through the base-1}}"
+        },
+        {
+          "guid": "SSQVdWkDgs",
+          "field_Front": "int builtin: Base-2, -8, and -16 literals have the prefixes {{c1::0b}} , {{c1::0o}} , and {{c1::0x}}"
+        },
+        {
+          "guid": "TD1uOAHc5c",
+          "field_Front": "int builtin: interpret x string as whatever prefix it supplies (like '0b' or '0x') in int(x, WHAT_BASE).  What is WHAT_BASE? {{c1::0}}"
+        },
+        {
+          "guid": "Fjs5FTaBu9",
+          "field_Front": "int builtin: the int function signature is {{c1::int(x, base=10)}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#isinstance",
+      "tags__extend": ["built-in-func-isinstance"],
+      "__notes": [
+        {
+          "guid": "n5SYby3SeB",
+          "field_Front": "isinstance builtin: classinfo argument can be a {{c1::type}} or a {{c1::tuple of types (and can be a recursive set of tuples)}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#issubclass",
+      "tags__extend": ["built-in-func-issubclass"],
+      "__notes": [
+        {
+          "guid": "chPuhjMheT",
+          "field_Front": "issubclass builtin: in issubclass(class, classinfo) there are three types of subclass of classinfo that the class can be: {{c1::(direct, indirect or virtual)}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#iter",
+      "tags__extend": ["built-in-func-iter"],
+      "__notes": [
+        {
+          "guid": "iejlRyHLlO",
+          "field_Front": "iter builtin: an object can support the iteration protocol by supplying the {{c1::__iter__()}} method"
+        },
+        {
+          "guid": "nz3oYZcKsB",
+          "field_Front": "iter builtin: an object can support the sequence protocol by supplying the {{c1::__getitem__()}} method"
+        },
+        {
+          "guid": "25o2QkaKSM",
+          "field_Front": "iter builtin: in iter(object) the object must support one of two protocols: the {{c1::iteration}} protocol or the {{c1::sequence}} protocol"
+        },
+        {
+          "guid": "jiXKp7AJxK",
+          "field_Front": "iter builtin: if the second argument, {{c1::sentinel}} is given, then object must be {{c1::a callable object}}"
+        },
+        {
+          "guid": "M6SvU1i3Fp",
+          "field_Front": "iter builtin: if the optional sentinel argument is passed, the iterator created will call the object with {{c1::no arguments}} for each call to its __next__() method"
+        },
+        {
+          "guid": "WXoKx1lSlD",
+          "field_Front": "iter builtin: if the optional sentinel argument is passed, if the value returned by __next__() is equal to sentinel, {{c1::StopIteration}} will be raised"
+        },
+        {
+          "guid": "ubwsPiluuO",
+          "field_Front": "iter builtin: a function that reads fixed-width blocks from a binary database file until the end of file is reached is called a {{c1::block-reader}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#len",
+      "tags__extend": ["built-in-func-len"],
+      "__notes": [
+        {
+          "guid": "oREhrYFlrU",
+          "field_Front": "len builtin: Return the length (the number of {{c1::items}}) of an object."
+        },
+        {
+          "guid": "WxBO2UaZst",
+          "field_Front": "len builtin: The argument may be a {{c1::sequence}} (such as a string, bytes, tuple, list, or range) or a {{c1::collection}} (such as a dictionary, set, or frozen set)."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#list",
+      "tags__extend": ["built-in-func-list"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#locals",
+      "tags__extend": ["built-in-func-locals"],
+      "__notes": [
+        {
+          "guid": "SxFEGUvdnh",
+          "field_Front": "locals builtin: Update and return a dictionary representing the current local {{c1::symbol table}}."
+        },
+        {
+          "guid": "1czeNXuX9X",
+          "field_Front": "{{c1::Free variables}} are returned by locals() when it is called in function blocks, but not in class blocks."
+        },
+        {
+          "guid": "luNLKe7x9I",
+          "field_Front": "Free variables are returned by locals() when it is called in {{c1::function}} blocks, but not in {{c1::class}} blocks."
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#map",
+      "tags__extend": ["built-in-func-map"],
+      "__notes": [
+        {
+          "guid": "L14UfoOZjd",
+          "field_Front": "map builtin: For cases where the function inputs are already arranged into {{c1::argument tuples}}, see itertools.starmap()."
+        },
+        {
+          "guid": "uoeduLCQyd",
+          "field_Front": "map builtin: the function signature is: {{c1::map(function, iterable, ...)}}"
+        },
+        {
+          "guid": "nrJAtlDF7L",
+          "field_Front": "map builtin: if multiple iterables are provided, the mapping stops when {{c1::the shortest iterable is exhausted}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#max",
+      "tags__extend": ["built-in-func-max"],
+      "__notes": [
+        {
+          "guid": "pk6DyYB4UE",
+          "field_Front": "max builtin: returns the {{c1::largest item in an iterable xx or xx the largest argument if multiple arguments are supplied}}"
+        },
+        {
+          "guid": "BlVIu1ybY8",
+          "field_Front": "max builtin: The {{c1::default}} argument specifies an object to return if the provided iterable is empty."
+        },
+        {
+          "guid": "IHJ2IPZKP5",
+          "field_Front": "max builtin: a ValueError is raised if {{c1::the iterable is empty}} and {{c1::default}} is not provided"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#memoryview",
+      "tags__extend": ["built-in-func-memoryview"],
+      "__notes": [
+        {
+          "guid": "TNMpyiFzPw",
+          "field_Front": "{{c1::memoryview}} objects allow Python code to access the internal data of an object that supports the buffer protocol without copying"
+        },
+        {
+          "guid": "xExPdmZ2xG",
+          "field_Front": "memoryview objects allow Python code to access the internal data of an object that supports the {{c1::buffer protocol}} without copying"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#min",
+      "tags__extend": ["built-in-func-min"],
+      "__notes": [
+        {
+          "guid": "jzUfQoIPUJ",
+          "field_Front": "min(): if multiple items are minimal, the function returns the first one encountered. This is consistent with other {{c1::sort-stability}} preserving tools"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#next",
+      "tags__extend": ["built-in-func-next"],
+      "__notes": [
+        {
+          "guid": "a0XKMtxvhz",
+          "field_Front": "next(): If the second, optional argument {{c1::default}} is given, it is returned if the iterator is exhausted, otherwise {{c1:: StopIteration}} is raised"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#object",
+      "tags__extend": ["built-in-func-object"],
+      "__notes": [
+        {
+          "guid": "GMaBJzDawq",
+          "field_Front": "{{c1::object}} is a base for all classes"
+        },
+        {
+          "guid": "XYiThvJnUa",
+          "field_Front": "{{c1::object}} has the methods that are common to all instances of Python classes"
+        },
+        {
+          "guid": "DBIXsYdZ2A",
+          "field_Front": "object does not {{c1::have a __dict__}}, so you can’t assign arbitrary attributes to an instance of the object class"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#oct",
+      "tags__extend": ["built-in-func-oct"],
+      "__notes": [
+        {
+          "guid": "mODTRk3pen",
+          "field_Front": "{{c1::oct()}} converts an integer number to an {{c1::octal string}} prefixed with '0o'"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#open",
+      "tags__extend": ["built-in-func-open"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#ord",
+      "tags__extend": ["built-in-func-ord"],
+      "__notes": [
+        {
+          "guid": "Qd1ZzCgXZ3",
+          "field_Front": "ord: Given a string representing one {{c1::Unicode character}}, return an {{c1::integer}} representing the {{c1::Unicode code point}} of it"
+        },
+        {
+          "guid": "LCSbkMdm8z",
+          "field_Front": "ord: is the inverse of {{c1::chr()}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#pow",
+      "tags__extend": ["built-in-func-pow"],
+      "__notes": [
+        {
+          "guid": "EZgDTTupVM",
+          "field_Front": "pow: the third argument, z, is used to take the {{c1::modulo}} of x to the power of y, and is there because it is more performant"
+        },
+        {
+          "guid": "KTUM1hp0cn",
+          "field_Front": "pow: The two-argument form pow(x, y) is equivalent to using the power operator: {{c1::x**y}}"
+        },
+        {
+          "guid": "ROsz8jmj0V",
+          "field_Front": "pow: with {{c1::mixed}} operand types, the coercion rules for {{c1::binary arithmetic operators}} apply"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#print",
+      "tags__extend": ["built-in-func-print"],
+      "__notes": [
+        {
+          "guid": "AbK5qLQTMq",
+          "field_Front": "the print function prints objects to the {{c1::text stream}} given as the file argument"
+        },
+        {
+          "guid": "qAKu7TDbne",
+          "field_Front": "print: output is followed by whatever is specified in the {{c1::end}} argument (newline is the default)"
+        },
+        {
+          "guid": "ABGKpu5UZ4",
+          "field_Front": "print: if you do not specify the {{c1::file}} argument, sys.stdout will be used"
+        },
+        {
+          "guid": "9x8j7zsgAV",
+          "field_Front": "print: if you do not want to buffer output, you can pass the {{c1::flush=True}} argument"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#property",
+      "tags__extend": ["built-in-func-property"],
+      "__notes": [
+        {
+          "guid": "J1N0Fl8vj6",
+          "field_Front": "property: you can make a method that deletes an instance attribute __x by using this decorator: {{c1::@x.deleter}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#range",
+      "tags__extend": ["built-in-func-range"],
+      "__notes": [
+        {
+          "guid": "tIFvsnn1Bz",
+          "field_Front": "range is actually an {{c1::immutable sequence}} type"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#repr",
+      "tags__extend": ["built-in-func-repr"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#reversed",
+      "tags__extend": ["built-in-func-reversed"],
+      "__notes": [
+        {
+          "guid": "cqtBAvwOar",
+          "field_Front": "An object can support the sequence protocol by providing the {{c1::__len__()}} method and the {{c1::__getitem__()}} method"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#round",
+      "tags__extend": ["built-in-func-round"],
+      "__notes": [
+        {
+          "guid": "9o97B6KoQm",
+          "field_Front": "The second, optional argument to the round function is {{c1::ndigits}}."
+        },
+        {
+          "guid": "uN28Y2bmBA",
+          "field_Front": "round(0.5) rounds to {{c1::0}}, and round(1.5) rounds to {{c1::2}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#set",
+      "tags__extend": ["built-in-func-set"],
+      "__notes": [
+        {
+          "guid": "hiSVZoAKg1",
+          "field_Front": "one way you can create a set is by passing the set function an {{c1::iterator}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#setattr",
+      "tags__extend": ["built-in-func-setattr"],
+      "__notes": [
+        {
+          "guid": "sM2NfFcDbQ",
+          "field_Front": "An alternative way of doing x.foobar = 123 using a built-in function is {{c1::setattr(x, 'foobar', 123)}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#slice",
+      "tags__extend": ["built-in-func-slice"],
+      "__notes": [
+        {
+          "guid": "fHDVTlKsoN",
+          "field_Front": "{{c1::itertools.islice()}} is an alternate version of the slice function, where it returns an iterator"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#sorted",
+      "tags__extend": ["built-in-func-sorted"],
+      "__notes": [
+        {
+          "guid": "bDdFVM6zyR",
+          "field_Front": "The built-in sorted() function is guaranteed to be {{c1::stable}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#staticmethod",
+      "tags__extend": ["built-in-func-staticmethod"],
+      "__notes": [
+        {
+          "guid": "xrSJx1JTSS",
+          "field_Front": "A static method does not receive an {{c1::implicit first argument}}"
+        },
+        {
+          "guid": "MxGGoQiFJv",
+          "field_Front": "You can use the {{c1::staticmethod}} function when you need a reference to a function from a class body and you want to avoid the automatic transformation to instance method"
+        },
+        {
+          "guid": "HzqCRUezJn",
+          "field_Front": "if you want to make sure that a function in a class is not passed an implicit first argument you can {{c1::use the @staticmethod function decorator}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#str",
+      "tags__extend": ["built-in-func-str"],
+      "__notes": [
+
+      ]
+    },
+    {
+      "field_Source__plusequal": "#sum",
+      "tags__extend": ["built-in-func-sum"],
+      "__notes": [
+        {
+          "guid": "SQgWyYiYUU",
+          "field_Front": "To add floating point values with extended precision, use {{c1::math.fsum()}}"
+        },
+        {
+          "guid": "zICeYJfKhN",
+          "field_Front": "To concatenate a series of iterables, consider using {{c1::itertools.chain()}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#super",
+      "tags__extend": ["built-in-func-super"],
+      "__notes": [
+        {
+          "guid": "mT80efveS0",
+          "field_Front": "super built-in: returns a {{c1::proxy}} object"
+        },
+        {
+          "guid": "qA4vvaR0yJ",
+          "field_Front": "super built-in: the super proxy object delegates method calls to {{c1::a parent or sibling class}} of type."
+        },
+        {
+          "guid": "nrndjzx2SF",
+          "field_Front": "super built-in: the search order is same as that used by {{c1::getattr()}} except {{c1::that the type itself is skipped}}"
+        },
+        {
+          "guid": "jL1hVS1cVf",
+          "field_Front": "super built-in: the {{c1::__mro__}} attribute of the type (first argument) lists the method resolution search order used by both getattr() and super()."
+        },
+        {
+          "guid": "vah9cnRTEo",
+          "field_Front": "super built-in: the __mro__ attribute of the type (first argument) lists the {{c1::method resolution search order}} used by both getattr() and super()."
+        },
+        {
+          "guid": "VRQm1CvYDb",
+          "field_Front": "super built-in: The {{c1::__mro__}} attribute is dynamic and can change whenever the inheritance hierarchy is updated."
+        },
+        {
+          "guid": "fHvxMJoFFq",
+          "field_Front": "super built-in: If the second argument is omitted, the super object returned is {{c1::unbound}}."
+        },
+        {
+          "guid": "xBUrzlolgs",
+          "field_Front": "super built-in: If the second argument is an object, {{c1::isinstance(obj, type)}} must be true."
+        },
+        {
+          "guid": "Jal77o4b32",
+          "field_Front": "super built-in: If the second argument is a type, {{c1::issubclass(type2, type)}} must be true"
+        },
+        {
+          "guid": "fZlqXiC3IH",
+          "field_Front": "super built-in: The second, python-specific use case is to support {{c1::cooperative multiple inheritance}} in a dynamic execution environment."
+        },
+        {
+          "guid": "AvaUc6IuWF",
+          "field_Front": "super built-in: cooperative multiple inheritance in a dynamic execution environment makes it possible to implement {{c1::'diamond diagrams'}}"
+        },
+        {
+          "guid": "2ek5ykteLT",
+          "field_Front": "super built-in: if your method definition looks like this, def method(self, arg): , you would use super like this: {{c1::super().method(arg)}}"
+        },
+        {
+          "guid": "YJ6Ohc63TW",
+          "field_Front": "super built-in: super() is implemented as part of the {{c1::binding process}} for explicit dotted attribute lookups such as super().__getitem__(name)."
+        },
+        {
+          "guid": "4rpgGvsdJ4",
+          "field_Front": "super built-in: super() is implemented as part of the binding process for {{c1::explicit dotted attribute lookups}} such as super().__getitem__(name)."
+        },
+        {
+          "guid": "dss0V5S9LW",
+          "field_Front": "super built-in: super() is implemented as part of the binding process for explicit dotted attribute lookups such as super().__getitem__(name) by implementing ist own {{c1::__getattribute__() method}} for searching classes"
+        },
+        {
+          "guid": "6U2Oa4aXr0",
+          "field_Front": "super built-in: super() is implemented as part of the binding process for explicit dotted attribute lookups such as super().__getitem__(name) by implementing ist own {{c1::__getattribute__() method}} for searching classes"
+        },
+        {
+          "guid": "gaUn0A5Oml",
+          "field_Front": "super built-in: implements its own __getattribute__() method for searching classes in a predictable order that supports {{c1::cooperative multiple inheritance}}."
+        },
+        {
+          "guid": "8pFan0t8j3",
+          "field_Front": "super built-in: the zero argument form only works inside {{c1::a class definition}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#tuple",
+      "tags__extend": ["built-in-func-tuple"],
+      "__notes": [
+        {
+          "guid": "9VrVrD40tw",
+          "field_Front": "tuple built-in: rather than being a function, tuple is actually an {{c1::immutable sequence type}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#type",
+      "tags__extend": ["built-in-func-type"],
+      "__notes": [
+        {
+          "guid": "h8dfvXbH7n",
+          "field_Front": "type built-in: the return value is a {{c1::type object}}"
+        },
+        {
+          "guid": "rSq2auCFrQ",
+          "field_Front": "type built-in: the return value is generally the same object as returned by {{c1::object.__class__}}"
+        },
+        {
+          "guid": "6wJZ07U2Ll",
+          "field_Front": "{{c1::isinstance()}} built-in function is recommended for testing the type of an object, because it takes {{c1::subclasses}} into account"
+        },
+        {
+          "guid": "cPUr9ibRm3",
+          "field_Front": "type built-in: With three arguments, return {{c1::a new type object}}"
+        },
+        {
+          "guid": "JdKakeuama",
+          "field_Front": "type built-in: returning a new type object is essentially a dynamic form of {{c1::the class statement}}"
+        },
+        {
+          "guid": "bdOIJy7lXQ",
+          "field_Front": "type built-in: using the type function, you can make the equivalent to class X: a = 1 by doing: {{c1::X = type('X', (object,), dict(a=1))}}"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#vars",
+      "tags__extend": ["built-in-func-vars"],
+      "__notes": [
+        {
+          "guid": "p1tR2sCICl",
+          "field_Front": "{{c1::vars}} returns the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute"
+        },
+        {
+          "guid": "soKapOX2NA",
+          "field_Front": "objects such as {{c1::modules}} and {{c1::instances}} have an updateable __dict__ attribute"
+        },
+        {
+          "guid": "ltNdLyOOyW",
+          "field_Front": "classes use a {{c1::types.MappingProxyType}} to prevent direct dictionary updates"
+        },
+        {
+          "guid": "GJ6Udo5fg5",
+          "field_Front": "related to the vars builtin: classes use a types.MappingProxyType to {{c1::prevent direct dictionary updates}}"
+        },
+        {
+          "guid": "pIByrlJdtN",
+          "field_Front": "without an argument, vars() acts like {{c1::locals()}}"
+        },
+        {
+          "guid": "qK8TgSPai0",
+          "field_Front": "without an argument, {{c1::vars()}} acts like locals()"
+        }
+      ]
+    },
+    {
+      "field_Source__plusequal": "#zip",
+      "tags__extend": ["built-in-func-zip"],
+      "__notes": [
+        {
+          "guid": "XcHus68r9A",
+          "field_Front": "zip builtin: returns {{c1::an iterator of tuples}}"
+        },
+        {
+          "guid": "VfpiXE5zN2",
+          "field_Front": "zip builtin: with a single iterable argument, it returns {{c1::an iterator of 1-tuples}}"
+        },
+        {
+          "guid": "bSaoXqRCp4",
+          "field_Front": "zip builtin: if you care about the trailing values in longer iterables, use {{c1::itertools.zip_longest()}} instead"
         }
       ]
     }

@@ -337,12 +337,80 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "{{c1::bin(3)}} (built-in function) outputs {{c2::'0b11'}}",
+                "Direct use of __import__() is discouraged in favor of {{c1::importlib.import_module()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#__import__"
+            ],
+            "flags": 0,
+            "guid": "x3v35qs2Hx",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-__import__"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::ascii()}} generates a string similar to that returned by repr() in Python 2",
+                "",
+                "https://docs.python.org/3/library/functions.html#ascii"
+            ],
+            "flags": 0,
+            "guid": "F0VlyZCPpx",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-ascii"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the {{c1::ascii()}} built-in function escapes non-ASCII characters using the backslash x, u, and U escapes",
+                "",
+                "https://docs.python.org/3/library/functions.html#ascii"
+            ],
+            "flags": 0,
+            "guid": "3NeTFNXdvB",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-ascii"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "when you replace non-ASCII chars with backslash x, y and U, these are called {{c1::escapes}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#ascii"
+            ],
+            "flags": 0,
+            "guid": "40yqa7vqm1",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-ascii"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the bin() built-in function converts an integer number to a {{c1::binary string}} prefixed with {{c1::'0b'}}",
                 "",
                 "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
-            "guid": "f82O8xFbbb",
+            "guid": "Ypn1vaB1ql",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "python-3-7",
@@ -354,17 +422,2822 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "format(3, {{c1::'#b'}}) outputs {{c2::'0b11'}}",
+                "bin(3) outputs {{c1::'0b11'}}",
                 "",
                 "https://docs.python.org/3/library/functions.html#bin"
             ],
             "flags": 0,
-            "guid": "ae2O4xcab9",
+            "guid": "7F8vHATjIE",
             "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
             "tags": [
                 "python-3-7",
                 "built-in-funcs",
                 "built-in-func-bin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "in bin(x) if x is not an int object, it must {{c1::define an __index__() method}} that {{c1::results in an integer}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bin"
+            ],
+            "flags": 0,
+            "guid": "zPJRdzkGdD",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "in format(14, x) what does x have to be for the result to be '0b1110'? {{c1::'#b'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bin"
+            ],
+            "flags": 0,
+            "guid": "BYAPu8MPbw",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "in format(14, x) what does x have to be for the result to be '1110'? {{c1::'b'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bin"
+            ],
+            "flags": 0,
+            "guid": "dUn8uIvzGb",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "within a formatted string, what does the formatted field look like to turn 13 into binary with no binary prefix {{c1:: {13:b} }}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bin"
+            ],
+            "flags": 0,
+            "guid": "TxEfy4A6Gt",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the bool class is a subclass of {{c1::int}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bool"
+            ],
+            "flags": 0,
+            "guid": "tckGESWXwb",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bool"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "breakpoint() was introduced in {{c1::3.7}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#breakpoint"
+            ],
+            "flags": 0,
+            "guid": "2ESeIDrVc6",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-breakpoint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "breakpoint() drops you in the debugger at the {{c1::call site}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#breakpoint"
+            ],
+            "flags": 0,
+            "guid": "QsyP9WdJUE",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-breakpoint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The {{c1::bytearray}} class is a mutable sequence of integers in the range 0 <= x < 256",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytearray"
+            ],
+            "flags": 0,
+            "guid": "LpafLvO2Q4",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytearray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The bytearray class is a mutable sequence of integers in the range  {{c1::0 <= x < 256}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytearray"
+            ],
+            "flags": 0,
+            "guid": "QJXGBcGT2G",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytearray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "bytearray built-in: if 'source' in function call is an object conforming to the buffer interface, a {{c1::read-only buffer of the object}} will be used to initialize the bytes array.",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytearray"
+            ],
+            "flags": 0,
+            "guid": "2qNTue1syf",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytearray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::bytes}} is an immutable version of bytearray",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "5XwfPpIlb2",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "bytes is an immutable version of {{c1::bytearray}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "Gz7dpwbBX2",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "bytearray vs. bytes: which one can also be created with literals? {{c1::bytes}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "4Igc32rLFb",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "what this outputs and why: list(b'A') {{c1::[65] because b'A' is byte literal syntax, and list() translates bytes arrays into integers}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "EUPbJr4J80",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "b'A' is {{c1::byte literal}} syntax",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "XACUZbb0Wh",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "bytes and bytearray are binary {{c1::sequence}} types",
+                "",
+                "https://docs.python.org/3/library/functions.html#bytes"
+            ],
+            "flags": 0,
+            "guid": "KvpVO17mvK",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-bytes"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "classes are callable.  doing so {{c1::returns a new instance}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#callable"
+            ],
+            "flags": 0,
+            "guid": "R0VHFsBL9a",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-callable"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "instances are callable if {{c1::their class has a __call__() method}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#callable"
+            ],
+            "flags": 0,
+            "guid": "Nl2IP0a6RA",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-callable"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "built-in function that returns the string representing a character whose Unicode code point is the integer i: {{c1::chr(i)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#chr"
+            ],
+            "flags": 0,
+            "guid": "bJKTXY4I5S",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-chr"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "chr() is the inverse of {{c1::ord()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#chr"
+            ],
+            "flags": 0,
+            "guid": "H5occrWv8e",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-chr"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "chr(): {{c1::ValueError}} will be raised if i is outside the range of 0 through 1,114,111",
+                "",
+                "https://docs.python.org/3/library/functions.html#chr"
+            ],
+            "flags": 0,
+            "guid": "r09udXDuVJ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-chr"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "A class method receives the {{c1::class}} as {{c1::implicit}} first argument",
+                "",
+                "https://docs.python.org/3/library/functions.html#classmethod"
+            ],
+            "flags": 0,
+            "guid": "zuBibEvile",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-classmethod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "transform a method into a class method with the built-in {{c1::classmethod}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#classmethod"
+            ],
+            "flags": 0,
+            "guid": "Y9P99XSI88",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-classmethod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile: Compile the source into a {{c1::code}} or {{c1::AST}} object",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "OxbI8iDI6Y",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile: Code objects can be executed by {{c1::exec()}} or {{c1::eval()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "WE02ptb6iR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile: The {{c1::filename}} argument should give the file from which the code was read",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "clo4MkcJi2",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile: The {{c1::filename}} argument should give the file from which the code was read",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "Kib2PMknmb",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: if the source wasn\u2019t read from a file {{c1::'<string>'}} is commonly used for the filename argument",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "Ni9qgjFVeA",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: {{c1::mode}} argument specifies what kind of code must be compiled",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "RGlqkF8lwr",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in, 'mode': {{c1::'exec'}} if source consists of a sequence of statements",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "1QgtlDY1K7",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in, 'mode': {{c1::'eval'}} if it consists of a single expression",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "sgt1IV6dmN",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in, 'mode': {{c1::'single'}} if it consists of a single interactive statement",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "gJiohkZvMV",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: when mode argument is 'single' {{c1::expression statements}} that evaluate to something other than None will be printed",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "BAe6E4nCpt",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: The optional arguments 'flags' and 'dont_inherit' control which {{c1::future statements}} affect the compilation of source",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "PxnfllNJIR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: The argument {{c1::optimize}} specifies the optimization level of the compiler",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "kU3pKXjhSh",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "compile built-in: The argument 'optimize' defaults to -1, which selects the optimization level of the interpreter as given by {{c1::-O}} options",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "aLruonioD2",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "If you want to parse Python code into its AST representation, see {{c1::ast.parse()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "5PgB0ueALZ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "In your documentation you can skip running doctest on prompt commands with {{c1::# doctest: +SKIP}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#compile"
+            ],
+            "flags": 0,
+            "guid": "udUNQQ8Cyk",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-compile"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The built-in function {{c1::delattr(x, 'foobar')}} is equivalent to del x.foobar",
+                "",
+                "https://docs.python.org/3/library/functions.html#delattr"
+            ],
+            "flags": 0,
+            "guid": "8gz9O7mTmq",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-delattr"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dir(object): the object has a method named {{c1::__dir__()}}, this method will be called and must return the list of attributes.",
+                "",
+                "https://docs.python.org/3/library/functions.html#dir"
+            ],
+            "flags": 0,
+            "guid": "jBsKsdmPDA",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-dir"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dir(object): If the object does not provide {{c1::__dir__()}}, the function tries its best to gather information from the object's __dict__ attribute, if defined, and from its type object.",
+                "",
+                "https://docs.python.org/3/library/functions.html#dir"
+            ],
+            "flags": 0,
+            "guid": "KiYu6wMktj",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-dir"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dir(object): If the object does not provide __dir__(), the function tries its best to gather information from the object's {{c1::__dict__}} attribute, if defined, and from its type object.",
+                "",
+                "https://docs.python.org/3/library/functions.html#dir"
+            ],
+            "flags": 0,
+            "guid": "kj7UqSHiOe",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-dir"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dir(object): The resulting list is not necessarily complete, and may be inaccurate when the object has a custom {{c1::__getattr__()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#dir"
+            ],
+            "flags": 0,
+            "guid": "XhNLyVGUOW",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-dir"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dir() built-in function: {{c1::metaclass attributes}} are not in the result list when the argument is a class.",
+                "",
+                "https://docs.python.org/3/library/functions.html#dir"
+            ],
+            "flags": 0,
+            "guid": "Ohe13NyfqF",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-dir"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The built-in function {{c1::divmod}} takes two (non complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division.",
+                "",
+                "https://docs.python.org/3/library/functions.html#divmod"
+            ],
+            "flags": 0,
+            "guid": "1u9hC5a8yM",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-divmod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The eval optional keyword parameters are {{c1::globals}} and {{c1::locals}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#eval"
+            ],
+            "flags": 0,
+            "guid": "AbrHXp9N4U",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-eval"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "See {{c1::ast.literal_eval()}} for a function that can safely evaluate strings with expressions containing only literals.",
+                "",
+                "https://docs.python.org/3/library/functions.html#eval"
+            ],
+            "flags": 0,
+            "guid": "11P0GBinwr",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-eval"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the module that provides direct access to all \u2018built-in\u2019 identifiers of Python is {{c1::builtins}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#exec"
+            ],
+            "flags": 0,
+            "guid": "AnUABxn8mx",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-exec"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "exec(): you can control what builtins are available to the executed code by inserting your own {{c1::__builtins__}} dictionary into globals before passing it to exec()",
+                "",
+                "https://docs.python.org/3/library/functions.html#exec"
+            ],
+            "flags": 0,
+            "guid": "HxfF5xfZDR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-exec"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "filter(): See {{c1::itertools.filterfalse()}} for the complementary function that returns elements of iterable for which function returns false.",
+                "",
+                "https://docs.python.org/3/library/functions.html#filter"
+            ],
+            "flags": 0,
+            "guid": "myPv7XGlR9",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-filter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "float(): you can make infinity by doing: {{c1::float('Infinity')}} (long style) or {{c1::float('inf')}} (short style)",
+                "",
+                "https://docs.python.org/3/library/functions.html#float"
+            ],
+            "flags": 0,
+            "guid": "AAAY4nuR7B",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-float"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int, float, complex are {{c1::numeric types}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#float"
+            ],
+            "flags": 0,
+            "guid": "avfrrYmpuM",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-float"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the name of the second parameter: format(value[, {{c1::format_spec}} ])",
+                "",
+                "https://docs.python.org/3/library/functions.html#format"
+            ],
+            "flags": 0,
+            "guid": "hkp04etNqk",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-format"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "format(): The default format_spec is an empty string which usually gives the same effect as calling {{c1::str(value)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#format"
+            ],
+            "flags": 0,
+            "guid": "q0yYKGLLCX",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-format"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "A call to format(value, format_spec) is translated to type(value).__format__(value, format_spec) which bypasses the {{c1::instance dictionary}} when searching for the value\u2019s __format__() method",
+                "",
+                "https://docs.python.org/3/library/functions.html#format"
+            ],
+            "flags": 0,
+            "guid": "DHRhominTJ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-format"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "A call to format(value, format_spec) is translated to {{c1::type(value).__format__(value, format_spec)}} which bypasses the instance dictionary when searching for the value\u2019s __format__() method",
+                "",
+                "https://docs.python.org/3/library/functions.html#format"
+            ],
+            "flags": 0,
+            "guid": "DHOrPi5kSR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-format"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Hash values are {{c1::integers}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hash"
+            ],
+            "flags": 0,
+            "guid": "NwjVrty4I5",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hash"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hash() values are used to quickly compare {{c1::dictionary keys}} during a dictionary lookup",
+                "",
+                "https://docs.python.org/3/library/functions.html#hash"
+            ],
+            "flags": 0,
+            "guid": "Okd4aXHO7M",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hash"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "For objects with custom __hash__() methods, note that hash() {{c1::truncates}} the return value based on the {{c1::bit width}} of the host machine",
+                "",
+                "https://docs.python.org/3/library/functions.html#hash"
+            ],
+            "flags": 0,
+            "guid": "YZwHBuFoga",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hash"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The help function is added to the built-in namespace by the {{c1::site}} module",
+                "",
+                "https://docs.python.org/3/library/functions.html#help"
+            ],
+            "flags": 0,
+            "guid": "9WevuFNqSz",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-help"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hex(): the hexadecimal string returned is prefixed with {{c1::'0x'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "zBT1ExIa1P",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the shorthand formatted string literal syntax for showing the hex representation of 255 (with the '0x' prefix) is {{c1::'%#x' % 255}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "UVPr952Iky",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hex: formatted string literal that returns '0xff' {{c1::f'{255:#x}'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "TYRCcnAbhY",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hex: formatted string literal that returns 'ff' {{c1::f'{255:x}'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "q9ND65N6Pa",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hex: formatted string literal that returns 'FF' (uppercase) {{c1::f'{255:X}'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "8yPXLHlbG6",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "To obtain a hexadecimal string representation for a float, use the {{c1::float.hex()}} method",
+                "",
+                "https://docs.python.org/3/library/functions.html#hex"
+            ],
+            "flags": 0,
+            "guid": "pCu0PtV0jU",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-hex"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "In CPython the id of an object is {{c1::the address of the object in memory}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#id"
+            ],
+            "flags": 0,
+            "guid": "kd9UFbbBhQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-id"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "If the {{c1::readline}} module was loaded, then input() will use it to provide elaborate line editing and history features",
+                "",
+                "https://docs.python.org/3/library/functions.html#input"
+            ],
+            "flags": 0,
+            "guid": "QO232PO5Vd",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-input"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "input() built-in: When EOF is read, {{c1::EOFError}} is raised",
+                "",
+                "https://docs.python.org/3/library/functions.html#input"
+            ],
+            "flags": 0,
+            "guid": "qaeb4x3WcY",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-input"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: For floating point numbers, the {{c1::__trunc__}} method on the object is used",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "zD6zn0N69M",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: For floating point numbers, int {{c1::truncates towards zero}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "Qk9NOP04am",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: another way of saying base 10 is {{c1::radix 10}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "k7bTebNMrp",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: if the x in int(x) is not a number, then it must be one of these three types: {{c1::string, bytes, bytearray}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "LhHXDlczYx",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: the value for 'a' in a string in x in int(x) is {{c1::10}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "t8FNUviCZQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: the value for 'z' in a string in x in int(x) is {{c1::35}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "k1RSOgj9bY",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: A base-n literal consists of the digits 0 to {{c1::n-1}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "MPrCIVyONU",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: if you do int('z', WHAT_BASE), (where 'z' is equal to 35) then what base must you use and why? {{c1::36 because allowed digits are 0 through the base-1}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "dvQOsurM9E",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: Base-2, -8, and -16 literals have the prefixes {{c1::0b}} , {{c1::0o}} , and {{c1::0x}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "SSQVdWkDgs",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: interpret x string as whatever prefix it supplies (like '0b' or '0x') in int(x, WHAT_BASE).  What is WHAT_BASE? {{c1::0}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "TD1uOAHc5c",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "int builtin: the int function signature is {{c1::int(x, base=10)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#int"
+            ],
+            "flags": 0,
+            "guid": "Fjs5FTaBu9",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-int"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "isinstance builtin: classinfo argument can be a {{c1::type}} or a {{c1::tuple of types (and can be a recursive set of tuples)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#isinstance"
+            ],
+            "flags": 0,
+            "guid": "n5SYby3SeB",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-isinstance"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "issubclass builtin: in issubclass(class, classinfo) there are three types of subclass of classinfo that the class can be: {{c1::(direct, indirect or virtual)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#issubclass"
+            ],
+            "flags": 0,
+            "guid": "chPuhjMheT",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-issubclass"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: an object can support the iteration protocol by supplying the {{c1::__iter__()}} method",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "iejlRyHLlO",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: an object can support the sequence protocol by supplying the {{c1::__getitem__()}} method",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "nz3oYZcKsB",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: in iter(object) the object must support one of two protocols: the {{c1::iteration}} protocol or the {{c1::sequence}} protocol",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "25o2QkaKSM",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: if the second argument, {{c1::sentinel}} is given, then object must be {{c1::a callable object}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "jiXKp7AJxK",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: if the optional sentinel argument is passed, the iterator created will call the object with {{c1::no arguments}} for each call to its __next__() method",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "M6SvU1i3Fp",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: if the optional sentinel argument is passed, if the value returned by __next__() is equal to sentinel, {{c1::StopIteration}} will be raised",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "WXoKx1lSlD",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "iter builtin: a function that reads fixed-width blocks from a binary database file until the end of file is reached is called a {{c1::block-reader}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#iter"
+            ],
+            "flags": 0,
+            "guid": "ubwsPiluuO",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-iter"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "len builtin: Return the length (the number of {{c1::items}}) of an object.",
+                "",
+                "https://docs.python.org/3/library/functions.html#len"
+            ],
+            "flags": 0,
+            "guid": "oREhrYFlrU",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-len"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "len builtin: The argument may be a {{c1::sequence}} (such as a string, bytes, tuple, list, or range) or a {{c1::collection}} (such as a dictionary, set, or frozen set).",
+                "",
+                "https://docs.python.org/3/library/functions.html#len"
+            ],
+            "flags": 0,
+            "guid": "WxBO2UaZst",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-len"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "locals builtin: Update and return a dictionary representing the current local {{c1::symbol table}}.",
+                "",
+                "https://docs.python.org/3/library/functions.html#locals"
+            ],
+            "flags": 0,
+            "guid": "SxFEGUvdnh",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-locals"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::Free variables}} are returned by locals() when it is called in function blocks, but not in class blocks.",
+                "",
+                "https://docs.python.org/3/library/functions.html#locals"
+            ],
+            "flags": 0,
+            "guid": "1czeNXuX9X",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-locals"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Free variables are returned by locals() when it is called in {{c1::function}} blocks, but not in {{c1::class}} blocks.",
+                "",
+                "https://docs.python.org/3/library/functions.html#locals"
+            ],
+            "flags": 0,
+            "guid": "luNLKe7x9I",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-locals"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "map builtin: For cases where the function inputs are already arranged into {{c1::argument tuples}}, see itertools.starmap().",
+                "",
+                "https://docs.python.org/3/library/functions.html#map"
+            ],
+            "flags": 0,
+            "guid": "L14UfoOZjd",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-map"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "map builtin: the function signature is: {{c1::map(function, iterable, ...)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#map"
+            ],
+            "flags": 0,
+            "guid": "uoeduLCQyd",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-map"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "map builtin: if multiple iterables are provided, the mapping stops when {{c1::the shortest iterable is exhausted}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#map"
+            ],
+            "flags": 0,
+            "guid": "nrJAtlDF7L",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-map"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "max builtin: returns the {{c1::largest item in an iterable xx or xx the largest argument if multiple arguments are supplied}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#max"
+            ],
+            "flags": 0,
+            "guid": "pk6DyYB4UE",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-max"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "max builtin: The {{c1::default}} argument specifies an object to return if the provided iterable is empty.",
+                "",
+                "https://docs.python.org/3/library/functions.html#max"
+            ],
+            "flags": 0,
+            "guid": "BlVIu1ybY8",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-max"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "max builtin: a ValueError is raised if {{c1::the iterable is empty}} and {{c1::default}} is not provided",
+                "",
+                "https://docs.python.org/3/library/functions.html#max"
+            ],
+            "flags": 0,
+            "guid": "IHJ2IPZKP5",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-max"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::memoryview}} objects allow Python code to access the internal data of an object that supports the buffer protocol without copying",
+                "",
+                "https://docs.python.org/3/library/functions.html#memoryview"
+            ],
+            "flags": 0,
+            "guid": "TNMpyiFzPw",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-memoryview"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "memoryview objects allow Python code to access the internal data of an object that supports the {{c1::buffer protocol}} without copying",
+                "",
+                "https://docs.python.org/3/library/functions.html#memoryview"
+            ],
+            "flags": 0,
+            "guid": "xExPdmZ2xG",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-memoryview"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "min(): if multiple items are minimal, the function returns the first one encountered. This is consistent with other {{c1::sort-stability}} preserving tools",
+                "",
+                "https://docs.python.org/3/library/functions.html#min"
+            ],
+            "flags": 0,
+            "guid": "jzUfQoIPUJ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-min"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "next(): If the second, optional argument {{c1::default}} is given, it is returned if the iterator is exhausted, otherwise {{c1:: StopIteration}} is raised",
+                "",
+                "https://docs.python.org/3/library/functions.html#next"
+            ],
+            "flags": 0,
+            "guid": "a0XKMtxvhz",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-next"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::object}} is a base for all classes",
+                "",
+                "https://docs.python.org/3/library/functions.html#object"
+            ],
+            "flags": 0,
+            "guid": "GMaBJzDawq",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-object"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::object}} has the methods that are common to all instances of Python classes",
+                "",
+                "https://docs.python.org/3/library/functions.html#object"
+            ],
+            "flags": 0,
+            "guid": "XYiThvJnUa",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-object"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "object does not {{c1::have a __dict__}}, so you can\u2019t assign arbitrary attributes to an instance of the object class",
+                "",
+                "https://docs.python.org/3/library/functions.html#object"
+            ],
+            "flags": 0,
+            "guid": "DBIXsYdZ2A",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-object"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::oct()}} converts an integer number to an {{c1::octal string}} prefixed with '0o'",
+                "",
+                "https://docs.python.org/3/library/functions.html#oct"
+            ],
+            "flags": 0,
+            "guid": "mODTRk3pen",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-oct"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "ord: Given a string representing one {{c1::Unicode character}}, return an {{c1::integer}} representing the {{c1::Unicode code point}} of it",
+                "",
+                "https://docs.python.org/3/library/functions.html#ord"
+            ],
+            "flags": 0,
+            "guid": "Qd1ZzCgXZ3",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-ord"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "ord: is the inverse of {{c1::chr()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#ord"
+            ],
+            "flags": 0,
+            "guid": "LCSbkMdm8z",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-ord"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "pow: the third argument, z, is used to take the {{c1::modulo}} of x to the power of y, and is there because it is more performant",
+                "",
+                "https://docs.python.org/3/library/functions.html#pow"
+            ],
+            "flags": 0,
+            "guid": "EZgDTTupVM",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-pow"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "pow: The two-argument form pow(x, y) is equivalent to using the power operator: {{c1::x**y}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#pow"
+            ],
+            "flags": 0,
+            "guid": "KTUM1hp0cn",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-pow"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "pow: with {{c1::mixed}} operand types, the coercion rules for {{c1::binary arithmetic operators}} apply",
+                "",
+                "https://docs.python.org/3/library/functions.html#pow"
+            ],
+            "flags": 0,
+            "guid": "ROsz8jmj0V",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-pow"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "the print function prints objects to the {{c1::text stream}} given as the file argument",
+                "",
+                "https://docs.python.org/3/library/functions.html#print"
+            ],
+            "flags": 0,
+            "guid": "AbK5qLQTMq",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-print"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "print: output is followed by whatever is specified in the {{c1::end}} argument (newline is the default)",
+                "",
+                "https://docs.python.org/3/library/functions.html#print"
+            ],
+            "flags": 0,
+            "guid": "qAKu7TDbne",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-print"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "print: if you do not specify the {{c1::file}} argument, sys.stdout will be used",
+                "",
+                "https://docs.python.org/3/library/functions.html#print"
+            ],
+            "flags": 0,
+            "guid": "ABGKpu5UZ4",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-print"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "print: if you do not want to buffer output, you can pass the {{c1::flush=True}} argument",
+                "",
+                "https://docs.python.org/3/library/functions.html#print"
+            ],
+            "flags": 0,
+            "guid": "9x8j7zsgAV",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-print"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "property: you can make a method that deletes an instance attribute __x by using this decorator: {{c1::@x.deleter}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#property"
+            ],
+            "flags": 0,
+            "guid": "J1N0Fl8vj6",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-property"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "range is actually an {{c1::immutable sequence}} type",
+                "",
+                "https://docs.python.org/3/library/functions.html#range"
+            ],
+            "flags": 0,
+            "guid": "tIFvsnn1Bz",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-range"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "An object can support the sequence protocol by providing the {{c1::__len__()}} method and the {{c1::__getitem__()}} method",
+                "",
+                "https://docs.python.org/3/library/functions.html#reversed"
+            ],
+            "flags": 0,
+            "guid": "cqtBAvwOar",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-reversed"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The second, optional argument to the round function is {{c1::ndigits}}.",
+                "",
+                "https://docs.python.org/3/library/functions.html#round"
+            ],
+            "flags": 0,
+            "guid": "9o97B6KoQm",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-round"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "round(0.5) rounds to {{c1::0}}, and round(1.5) rounds to {{c1::2}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#round"
+            ],
+            "flags": 0,
+            "guid": "uN28Y2bmBA",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-round"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "one way you can create a set is by passing the set function an {{c1::iterator}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#set"
+            ],
+            "flags": 0,
+            "guid": "hiSVZoAKg1",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-set"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "An alternative way of doing x.foobar = 123 using a built-in function is {{c1::setattr(x, 'foobar', 123)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#setattr"
+            ],
+            "flags": 0,
+            "guid": "sM2NfFcDbQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-setattr"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::itertools.islice()}} is an alternate version of the slice function, where it returns an iterator",
+                "",
+                "https://docs.python.org/3/library/functions.html#slice"
+            ],
+            "flags": 0,
+            "guid": "fHDVTlKsoN",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-slice"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The built-in sorted() function is guaranteed to be {{c1::stable}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#sorted"
+            ],
+            "flags": 0,
+            "guid": "bDdFVM6zyR",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-sorted"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "A static method does not receive an {{c1::implicit first argument}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#staticmethod"
+            ],
+            "flags": 0,
+            "guid": "xrSJx1JTSS",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-staticmethod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "You can use the {{c1::staticmethod}} function when you need a reference to a function from a class body and you want to avoid the automatic transformation to instance method",
+                "",
+                "https://docs.python.org/3/library/functions.html#staticmethod"
+            ],
+            "flags": 0,
+            "guid": "MxGGoQiFJv",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-staticmethod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "if you want to make sure that a function in a class is not passed an implicit first argument you can {{c1::use the @staticmethod function decorator}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#staticmethod"
+            ],
+            "flags": 0,
+            "guid": "HzqCRUezJn",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-staticmethod"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "To add floating point values with extended precision, use {{c1::math.fsum()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#sum"
+            ],
+            "flags": 0,
+            "guid": "SQgWyYiYUU",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-sum"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "To concatenate a series of iterables, consider using {{c1::itertools.chain()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#sum"
+            ],
+            "flags": 0,
+            "guid": "zICeYJfKhN",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-sum"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: returns a {{c1::proxy}} object",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "mT80efveS0",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: the super proxy object delegates method calls to {{c1::a parent or sibling class}} of type.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "qA4vvaR0yJ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: the search order is same as that used by {{c1::getattr()}} except {{c1::that the type itself is skipped}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "nrndjzx2SF",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: the {{c1::__mro__}} attribute of the type (first argument) lists the method resolution search order used by both getattr() and super().",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "jL1hVS1cVf",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: the __mro__ attribute of the type (first argument) lists the {{c1::method resolution search order}} used by both getattr() and super().",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "vah9cnRTEo",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: The {{c1::__mro__}} attribute is dynamic and can change whenever the inheritance hierarchy is updated.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "VRQm1CvYDb",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: If the second argument is omitted, the super object returned is {{c1::unbound}}.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "fHvxMJoFFq",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: If the second argument is an object, {{c1::isinstance(obj, type)}} must be true.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "xBUrzlolgs",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: If the second argument is a type, {{c1::issubclass(type2, type)}} must be true",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "Jal77o4b32",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: The second, python-specific use case is to support {{c1::cooperative multiple inheritance}} in a dynamic execution environment.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "fZlqXiC3IH",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: cooperative multiple inheritance in a dynamic execution environment makes it possible to implement {{c1::'diamond diagrams'}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "AvaUc6IuWF",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: if your method definition looks like this, def method(self, arg): , you would use super like this: {{c1::super().method(arg)}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "2ek5ykteLT",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: super() is implemented as part of the {{c1::binding process}} for explicit dotted attribute lookups such as super().__getitem__(name).",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "YJ6Ohc63TW",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: super() is implemented as part of the binding process for {{c1::explicit dotted attribute lookups}} such as super().__getitem__(name).",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "4rpgGvsdJ4",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: super() is implemented as part of the binding process for explicit dotted attribute lookups such as super().__getitem__(name) by implementing ist own {{c1::__getattribute__() method}} for searching classes",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "dss0V5S9LW",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: super() is implemented as part of the binding process for explicit dotted attribute lookups such as super().__getitem__(name) by implementing ist own {{c1::__getattribute__() method}} for searching classes",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "6U2Oa4aXr0",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: implements its own __getattribute__() method for searching classes in a predictable order that supports {{c1::cooperative multiple inheritance}}.",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "gaUn0A5Oml",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "super built-in: the zero argument form only works inside {{c1::a class definition}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#super"
+            ],
+            "flags": 0,
+            "guid": "8pFan0t8j3",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-super"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "tuple built-in: rather than being a function, tuple is actually an {{c1::immutable sequence type}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#tuple"
+            ],
+            "flags": 0,
+            "guid": "9VrVrD40tw",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-tuple"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "type built-in: the return value is a {{c1::type object}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "h8dfvXbH7n",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "type built-in: the return value is generally the same object as returned by {{c1::object.__class__}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "rSq2auCFrQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::isinstance()}} built-in function is recommended for testing the type of an object, because it takes {{c1::subclasses}} into account",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "6wJZ07U2Ll",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "type built-in: With three arguments, return {{c1::a new type object}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "cPUr9ibRm3",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "type built-in: returning a new type object is essentially a dynamic form of {{c1::the class statement}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "JdKakeuama",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "type built-in: using the type function, you can make the equivalent to class X: a = 1 by doing: {{c1::X = type('X', (object,), dict(a=1))}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#type"
+            ],
+            "flags": 0,
+            "guid": "bdOIJy7lXQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-type"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::vars}} returns the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "p1tR2sCICl",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "objects such as {{c1::modules}} and {{c1::instances}} have an updateable __dict__ attribute",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "soKapOX2NA",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "classes use a {{c1::types.MappingProxyType}} to prevent direct dictionary updates",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "ltNdLyOOyW",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "related to the vars builtin: classes use a types.MappingProxyType to {{c1::prevent direct dictionary updates}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "GJ6Udo5fg5",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "without an argument, vars() acts like {{c1::locals()}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "pIByrlJdtN",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "without an argument, {{c1::vars()}} acts like locals()",
+                "",
+                "https://docs.python.org/3/library/functions.html#vars"
+            ],
+            "flags": 0,
+            "guid": "qK8TgSPai0",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-vars"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "zip builtin: returns {{c1::an iterator of tuples}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#zip"
+            ],
+            "flags": 0,
+            "guid": "XcHus68r9A",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-zip"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "zip builtin: with a single iterable argument, it returns {{c1::an iterator of 1-tuples}}",
+                "",
+                "https://docs.python.org/3/library/functions.html#zip"
+            ],
+            "flags": 0,
+            "guid": "VfpiXE5zN2",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-zip"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "zip builtin: if you care about the trailing values in longer iterables, use {{c1::itertools.zip_longest()}} instead",
+                "",
+                "https://docs.python.org/3/library/functions.html#zip"
+            ],
+            "flags": 0,
+            "guid": "bSaoXqRCp4",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "python-3-7",
+                "built-in-funcs",
+                "built-in-func-zip"
             ]
         }
 
