@@ -337,6 +337,78 @@
             "__type__": "Note",
             "data": "",
             "fields": [
+                "dataclasses: If you pass the {{c1::order}} parameter to dataclass() then __lt__(), __le__(), __gt__(), and __ge__() methods will be generated",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "xx893429sc",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: you can replace the default field value with a call to the provided {{c1::field()}} function",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "KjF2v6NwPu",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: the {{c1::MISSING}} value is a sentinel object used to detect if the default and default_factory parameters are provided to the field() function",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "HwWcy21Acs",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: the {{c1::default_factory}} paramater can be used to specify the default value for fields with mutable default values",
+                "",
+                "https://docs.python.org/3/library/dataclasses.html"
+            ],
+            "flags": 0,
+            "guid": "Q2kFRfRVYO",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
                 "Direct use of __import__() is discouraged in favor of {{c1::importlib.import_module()}}",
                 "",
                 "https://docs.python.org/3/library/functions.html#__import__"
