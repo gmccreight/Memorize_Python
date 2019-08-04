@@ -1,0 +1,52 @@
+{
+  "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+  "field_Source": "https://www.python.org/dev/peps/pep-0557/",
+  "field_Extra": "",
+  "tags": ["new-in-python-3-7", "python-3-7", "python-lib", "python-lib-dataclasses"],
+  "__sections": [
+    {
+      "__notes": [
+        {
+          "guid": "5zxK8vBqVJ",
+          "field_Front": "The dataclass decorator examines the class to find fields. A field is defined as any variable identified in {{c1::__annotations__}}. "
+        },
+        {
+          "guid": "84F8w73YT1",
+          "field_Front": "Note that __annotations__ is guaranteed to be an {{c1::ordered mapping}}, in class declaration order"
+        },
+        {
+          "guid": "jXvJWF6vfg",
+          "field_Front": "dataclasses: the generated __init__ code will call a method named {{c1::__post_init__}}, if it is defined on the class"
+        },
+        {
+          "guid": "XvpAjJVfVQ",
+          "field_Front": "dataclasses: One place where dataclass actually inspects the type of a field is to determine if a field is a class variable as defined in PEP 526. It does this by checking if the type of the field is {{c1::typing.ClassVar}}. If it is, then it is excluded from consideration as a field and is ignored by the Data Class mechanisms."
+        },
+        {
+          "guid": "XdgKQHYIAB",
+          "field_Front": "dataclasses: You can emulate immutability by passing {{c1::frozen=True}} to the @dataclass decorator.  This adds {{c2::__setattr__}} and {{c2::__delattr__}} methods to the class that raise a {{c2::FrozenInstanceError}} when invoked"
+        },
+        {
+          "guid": "rFi5x6XCKx",
+          "field_Front": "dataclasses: If a field specifies a default_factory, it is called with {{c1::zero arguments}} when a default value for the field is needed"
+        },
+        {
+          "guid": "gbYwWsntci",
+          "field_Front": "dataclasses: Using default factory functions is a way to create new instances of mutable types as default values for fields:"
+        },
+        {
+          "guid": "LLQwOjWa5S",
+          "field_Front": "dataclasses: return a dictionary representation of a dataclass instance: {{c1::dataclasses.asdict(instance)}}"
+        },
+        {
+          "guid": "TOCyrb3wi0",
+          "field_Front": "dataclasses: return a tuple representation of a dataclass instance: {{c1::dataclasses.astuple(instance)}}"
+        },
+        {
+          "guid": "tg2hFvvQKa",
+          "field_Front": "dataclasses: A more featureful library that moves too fast to be accommodated in the standard library is called {{c1::attrs}}"
+        }
+      ]
+    }
+  ]
+}

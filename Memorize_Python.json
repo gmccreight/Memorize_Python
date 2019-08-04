@@ -175,6 +175,186 @@
             "__type__": "Note",
             "data": "",
             "fields": [
+                "The dataclass decorator examines the class to find fields. A field is defined as any variable identified in {{c1::__annotations__}}. ",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "5zxK8vBqVJ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Note that __annotations__ is guaranteed to be an {{c1::ordered mapping}}, in class declaration order",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "84F8w73YT1",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: the generated __init__ code will call a method named {{c1::__post_init__}}, if it is defined on the class",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "jXvJWF6vfg",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: One place where dataclass actually inspects the type of a field is to determine if a field is a class variable as defined in PEP 526. It does this by checking if the type of the field is {{c1::typing.ClassVar}}. If it is, then it is excluded from consideration as a field and is ignored by the Data Class mechanisms.",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "XvpAjJVfVQ",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: You can emulate immutability by passing {{c1::frozen=True}} to the @dataclass decorator.  This adds {{c2::__setattr__}} and {{c2::__delattr__}} methods to the class that raise a {{c2::FrozenInstanceError}} when invoked",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "XdgKQHYIAB",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: If a field specifies a default_factory, it is called with {{c1::zero arguments}} when a default value for the field is needed",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "rFi5x6XCKx",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: Using default factory functions is a way to create new instances of mutable types as default values for fields:",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "gbYwWsntci",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: return a dictionary representation of a dataclass instance: {{c1::dataclasses.asdict(instance)}}",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "LLQwOjWa5S",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: return a tuple representation of a dataclass instance: {{c1::dataclasses.astuple(instance)}}",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "TOCyrb3wi0",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "dataclasses: A more featureful library that moves too fast to be accommodated in the standard library is called {{c1::attrs}}",
+                "",
+                "https://www.python.org/dev/peps/pep-0557/"
+            ],
+            "flags": 0,
+            "guid": "tg2hFvvQKa",
+            "note_model_uuid": "a1381100-b00b-11e9-86cd-a0999b116888",
+            "tags": [
+                "new-in-python-3-7",
+                "python-3-7",
+                "python-lib",
+                "python-lib-dataclasses"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
                 "the dataclasses module was introduced in Python version {{c1::3.7}}",
                 "",
                 "https://docs.python.org/3/library/dataclasses.html"
