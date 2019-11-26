@@ -96,7 +96,7 @@ approaches.
 
 I looked to see if there were any Python Anki decks already available, and
 there was a [very good deck](https://ankiweb.net/shared/info/51975584).  I
-started with that deck.  I quickly realized that although the deck was not a
+started with that deck.  I quickly realized that the deck was not a
 gentle introduction to programming, and would likely be overwhelming for a
 novice.  However, it worked quite well for me, despite little exposition.  I
 was picking up the concepts and syntax quickly, and more importantly, I was
